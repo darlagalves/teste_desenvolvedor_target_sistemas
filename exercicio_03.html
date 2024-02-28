@@ -96,6 +96,7 @@
         let menorFaturamento = Infinity;
         let diaMenorFaturamento;
         let somaFaturamentos = 0;
+        let diasMaiorQueMedia = 0;
         dados.forEach(item => {
             if (item.valor > maiorFaturamento) {
                 maiorFaturamento = item.valor;
@@ -113,7 +114,12 @@
             somaFaturamentos += item.valor; 
         });
         const mediaFaturamento = somaFaturamentos / dados.length;
-        document.getElementById('media-faturamento').textContent = mediaFaturamento.toFixed(2);
+        dados.forEach(item => {
+            if (item.valor > mediaFaturamento){
+                diasMaiorQueMedia++;
+            }
+        });
+        document.getElementById('media-faturamento').textContent = diasMaiorQueMedia;
         document.getElementById('dia-maior-faturamento').textContent = diaMaiorFaturamento;
         document.getElementById('dia-menor-faturamento').textContent = diaMenorFaturamento;
         document.getElementById('maior-faturamento').textContent = maiorFaturamento;
