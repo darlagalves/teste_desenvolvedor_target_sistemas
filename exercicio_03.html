@@ -25,9 +25,8 @@
       overflow-y: auto; 
       overflow-x: hidden;
     }
-    .table-hover tbody tr:hover {
+    .table-hover tbody tr:hover td {
       background-color: rgba(220, 16, 16, 0.438)!important;
-      color: rgba(220, 16, 16, 0.438);
     }
     .list-group-horizontal {
       display: flex;
@@ -61,10 +60,10 @@
     <div>
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                Dia com maior faturamento <i id="maior-faturamento"></i>
+                Dia com maior faturamento <span id="maior-faturamento"></span>
                 <span class="badge text-bg-danger rounded-pill"  id="dia-maior-faturamento"></span>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                Dia com menor faturamento <i id="menor-faturamento"></i>
+                Dia com menor faturamento <span id="menor-faturamento"></span>
                 <span class="badge text-bg-danger rounded-pill" id="dia-menor-faturamento"></span>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 Número de dias no mês em que o valor de faturamento diário foi superior à média mensal
@@ -114,8 +113,8 @@
         document.getElementById('media-faturamento').textContent = diasMaiorQueMedia;
         document.getElementById('dia-maior-faturamento').textContent = diaMaiorFaturamento;
         document.getElementById('dia-menor-faturamento').textContent = diaMenorFaturamento;
-        document.getElementById('maior-faturamento').textContent = maiorFaturamento;
-        document.getElementById('menor-faturamento').textContent = menorFaturamento;
+        document.getElementById('maior-faturamento').textContent = '('+ maiorFaturamento+')';
+        document.getElementById('menor-faturamento').textContent = '('+menorFaturamento+')';
     })
     .catch(error => {
         console.error('Ocorreu um erro ao ler o arquivo JSON:', error);
