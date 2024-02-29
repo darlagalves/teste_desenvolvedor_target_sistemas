@@ -2,7 +2,7 @@
 
 Olá! Este é o repositório do teste de desenvolvedora para a vaga afirmativa para mulheres em job rotation na Target Sistemas em São Paulo. O teste consiste em alguns exercícios em JavaScript, com uma interface básica utilizando HTML, CSS e Bootstrap. 
 
-Os exercícios estão numerados de 2 a 5, e o enunciado de cada um se encontra abaixo:
+Os exercícios estão numerados de 2 a 5, sua resolução está no diretório exercicios, já o enunciado de cada um se encontra abaixo:
 
 ## Exercícios
 
@@ -50,7 +50,7 @@ git clone https://github.com/darlagalves/teste_desenvolvedor_target_sistemas.git
 ## Notas Adicionais
 
 • Certifique-se de ter um navegador da web instalado em sua máquina para visualizar a interface.
-• Para o exercício 3, os dados fornecidos estão disponíveis com o nome de arquivo 'dados.json'.
+• Para o exercício 3, os dados fornecidos estão disponíveis com o nome de arquivo 'dados.json' no diretório data.
 
 Se você tiver alguma dúvida ou precisar de mais informações sobre o teste, não hesite em entrar comigo, me coloco a disposição.
 
