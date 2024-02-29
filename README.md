@@ -1,4 +1,3 @@
-# teste_desenvolvedor_target_sistemas
 # Teste de Desenvolvedora - Target Sistemas
 
 Olá! Este é o repositório do teste de desenvolvedora para a vaga afirmativa para mulheres em job rotation na Target Sistemas em São Paulo. O teste consiste em alguns exercícios em JavaScript, com uma interface básica utilizando HTML, CSS e Bootstrap. 
